@@ -23,21 +23,25 @@ store.subscribe(() => {
 const expenseOne = store.dispatch(
   addExpense({
     description: "Water Bill",
-    amount: 150000,
-    createdAt: 1000
+    amount: 4500
   })
 );
 
 const expenseTwo = store.dispatch(
   addExpense({
     description: "Gas Bill",
-    amount: 500000,
-    createdAt: 1000
+    amount: 1000,
+    createdAt: 1070
   })
 );
 
-const search = store.dispatch(setTextFilter("bill"));
-const search2 = store.dispatch(setTextFilter("gas"));
+const expenseThree = store.dispatch(
+  addExpense({
+    description: "Rent",
+    amount: 109500,
+    createdAt: 1050
+  })
+);
 
 console.log(store.getState());
 
