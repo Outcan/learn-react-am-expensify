@@ -17,7 +17,7 @@ store.subscribe(() => {
   const state = store.getState();
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
   //console.log(state);
-  console.log(visibleExpenses);
+  //console.log(visibleExpenses);
 });
 
 const expenseOne = store.dispatch(
@@ -43,7 +43,7 @@ const expenseThree = store.dispatch(
   })
 );
 
-console.log(store.getState());
+//console.log(store.getState());
 
 const jsx = (
   <Provider store={store}>
